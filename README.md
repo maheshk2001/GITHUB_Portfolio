@@ -46,7 +46,7 @@ A modern, responsive portfolio website showcasing my work in RTL Design, Design 
 - Email: msrihasa@asu.edu
 - Phone: +1 6237557032
 - LinkedIn: https://www.linkedin.com/in/srihasammaheshkaushik/
-- GitHub: https://github.com/kaushik2001
+- GitHub: https://github.com/maheshk2001
 
 ### Projects
 - PMU Verification Using UVM (Western Semiconductor)
@@ -71,7 +71,7 @@ This website is ready to be deployed on GitHub Pages:
 4. Select "Deploy from a branch"
 5. Choose "main" branch and "/ (root)" folder
 6. Click "Save"
-7. Your website will be available at `https://kaushik2001.github.io/GITHUB_Portfolio`
+7. Your website will be available at `https://maheshk2001.github.io/GITHUB_Portfolio`
 
 ## Browser Support
 
