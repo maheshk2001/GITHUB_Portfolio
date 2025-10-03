@@ -333,6 +333,17 @@ body {
     color: #666;
 }
 
+.project-card ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.6;
+}
+
 .project-links {
     display: flex;
     gap: 15px;
