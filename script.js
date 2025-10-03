@@ -233,3 +233,65 @@ const revealSections = () => {
 
 window.addEventListener('scroll', revealSections);
 document.addEventListener('DOMContentLoaded', revealSections);
+
+// Video Modal Functionality
+function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    const source = video.querySelector('source');
+    
+    source.src = `assets/videos/${videoSrc}`;
+    video.load();
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    
+    modal.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the video
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('videoModal');
+    if (event.target === modal) {
+        closeVideoModal();
+    }
+});
+
+// Close modal with close button
+document.addEventListener('DOMContentLoaded', () => {
+    const closeBtn = document.querySelector('.video-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeVideoModal);
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeVideoModal();
+    }
+});
+
+// Image lazy loading
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+});

@@ -53,6 +53,14 @@
                             <span class="duration">Jul 2025 - Present</span>
                         </div>
                     </div>
+                    <div class="project-media">
+                        <img src="assets/images/projects/pmu-verification.jpg" alt="PMU Verification UVM Environment" class="project-image">
+                        <div class="project-video-overlay">
+                            <button class="play-button" onclick="openVideoModal('pmu-verification-demo.mp4')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
                     <h3>PMU Verification Using UVM</h3>
                     <p>Developing a comprehensive UVM-based verification environment for a Power Management Unit supporting four operational modes (Standby, Shutdown, Mission, Startup).</p>
                     <div class="project-tech">
@@ -71,6 +79,14 @@
                         <div class="project-meta">
                             <span class="company">Western Semiconductor</span>
                             <span class="duration">Jan 2025 - May 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-media">
+                        <img src="assets/images/projects/sobel-detection.jpg" alt="Sobel Edge Detection FPGA Implementation" class="project-image">
+                        <div class="project-video-overlay">
+                            <button class="play-button" onclick="openVideoModal('sobel-detection-demo.mp4')">
+                                <i class="fas fa-play"></i>
+                            </button>
                         </div>
                     </div>
                     <h3>Real-Time Sobel Edge Detection on Xilinx Virtex 7 FPGA</h3>
@@ -279,6 +295,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-close">&times;</span>
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
