@@ -44,7 +44,6 @@ A modern, responsive portfolio website showcasing my work in RTL Design, Design 
 ### Personal Information
 - Name: Mahesh Kaushik Srihasam
 - Email: msrihasa@asu.edu
-- Phone: +1 6237557032
 - LinkedIn: https://www.linkedin.com/in/srihasammaheshkaushik/
 - GitHub: https://github.com/maheshk2001
 
