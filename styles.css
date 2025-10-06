@@ -323,6 +323,26 @@ body {
     margin: 0 auto;
 }
 
+/* About photo - circular face crop */
+.about-photo-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    margin-bottom: 25px;
+}
+
+.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Adjust the vertical focus if needed to center the face */
+    object-position: 50% 30%;
+    display: block;
+}
+
 .about-text p {
     font-size: 1.2rem;
     margin-bottom: 25px;
